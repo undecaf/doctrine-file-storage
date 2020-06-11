@@ -1,0 +1,8 @@
+<h3>All resolutions of {images.0.name}</h3>
+<f:for each="{images}" as="img">
+    <div style="display: inline-block;">
+        <img src="content.php?uuid={img.uuid}" style="max-width: 100%;">
+    </div>
+</f:for>
+
+<p><a href="gallery.php">Return to the gallery</a></p>

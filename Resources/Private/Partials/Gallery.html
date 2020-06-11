@@ -1,0 +1,15 @@
+<h3>Upload an image</h3>
+<form action="{action}" enctype="multipart/form-data" method="POST">
+    <input type="file" name="{fileField}" accept="image/*">
+    <input type="submit" value="Upload">
+</form>
+
+<h3>Uploaded images (click to view all sizes)</h3>
+<f:for each="{images}" as="img">
+    <div style="display: inline-block; text-align: center; border: 1px solid grey; padding: 6px;">
+        <a href="images.php?name={img.name}"><img src="content.php?uuid={img.uuid}"></a><br>
+        {img.name}
+    </div>
+</f:for>
+
+<p><a href="files.php">View all files</a></p>
