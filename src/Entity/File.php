@@ -10,6 +10,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  * 
  * @ORM\Entity
  * @ORM\Table(name="files")
+ * @ORM\InheritanceType("JOINED")
+ * @ORM\DiscriminatorColumn(name="discr", type="string")
   */
 class File extends Persistent
 {
