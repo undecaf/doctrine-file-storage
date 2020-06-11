@@ -1,0 +1,12 @@
+<h3>Upload a file</h3>
+<form action="{action}" enctype="multipart/form-data" method="POST">
+    <input type="file" name="{fileField}" accept="*/*">
+    <input type="submit" value="Upload">
+</form>
+
+<h3>Uploaded files (click to download)</h3>
+<ol>
+    <f:for each="{files}" as="file">
+        <li><a href="content.php?uuid={file.uuid}&amp;dl">{file.name}</a>: {file.mimetype} ({file.size} bytes)</li>
+    </f:for>
+</ol>
