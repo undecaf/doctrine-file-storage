@@ -1,0 +1,6 @@
+.*/
+**/Secrets/*
+!**/Secrets/*.template
+Proxies/
+logs/
+vendor/
