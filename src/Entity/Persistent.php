@@ -29,7 +29,7 @@ class Persistent
     /**
      * The internal primary identity key which is unique, too.
      *
-     * @var UuidInterface
+     * @var string
      *
      * @ORM\Column(type="guid", unique=true)
      */
@@ -43,7 +43,7 @@ class Persistent
      */
     public function initUuid(): void
     {
-        $this->uuid = Uuid::uuid4();
+        $this->uuid = Uuid::uuid4()->toString();
     }
 
     public function getId(): int
@@ -51,7 +51,7 @@ class Persistent
         return $this->id;
     }
 
-    public function getUuid(): UuidInterface
+    public function getUuid(): string
     {
         return $this->uuid;
     }
