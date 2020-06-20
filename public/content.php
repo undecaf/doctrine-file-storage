@@ -12,7 +12,7 @@ try {
     // Get the requested file
     $query = $entityManager->createQueryBuilder()
         ->select('f')
-        ->from('Entity\File', 'f')
+        ->from(File::class, 'f')
         ->where('f.uuid = :uuid')
         ->setParameter('uuid', $_GET['uuid'])
         ->getQuery();

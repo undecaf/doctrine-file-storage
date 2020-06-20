@@ -29,7 +29,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         // Query all uploaded files
         $query = $entityManager->createQueryBuilder()
             ->select('file')
-            ->from('Entity\File', 'file')
+            ->from(File::class, 'file')
             ->orderBy('file.name', 'ASC')
             ->getQuery();
         $files = $query->getArrayResult();

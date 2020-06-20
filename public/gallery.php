@@ -32,7 +32,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         // Query all thumbnails
         $query = $entityManager->createQueryBuilder()
             ->select('img')
-            ->from('Entity\Image', 'img')
+            ->from(Image::class, 'img')
             ->where('img.width <= :tn_size and img.height <= :tn_size')
             ->setParameter('tn_size', TN_SIZE)
             ->orderBy('img.name', 'ASC')

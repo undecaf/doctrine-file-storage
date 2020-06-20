@@ -16,7 +16,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         // Query all sizes of a certain name
         $query = $entityManager->createQueryBuilder()
             ->select('img')
-            ->from('Entity\Image', 'img')
+            ->from(Image::class, 'img')
             ->where('img.name = :name')
             ->setParameter('name', $_GET['name'])
             ->orderBy('img.width', 'ASC')
