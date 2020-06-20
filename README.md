@@ -36,3 +36,4 @@ Within this project, a few additional techniques are mentioned that might be use
 - Generating image thumbnails with the
   [Imagick PHP extension](https://www.php.net/manual/en/class.imagick.php)
 - Rendering a UI with the [Fluid Template Engine](https://typo3.org/fluid)
+- Unit testing Doctrine ORM entity classes with [PHPUnit](https://phpunit.de/)

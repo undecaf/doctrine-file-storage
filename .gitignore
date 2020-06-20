@@ -2,5 +2,6 @@
 **/Secrets/*
 !**/Secrets/*.template
 Proxies/
+local/
 logs/
 vendor/
