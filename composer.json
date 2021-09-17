@@ -7,6 +7,7 @@
 		"doctrine/dbal": "^2.10",
 		"doctrine/orm": "^2.7",
 		"doctrine/annotations": "^1.10",
+		"doctrine/cache":  "^1.11",
 		"symfony/yaml": "^5.0",
 		"symfony/validator": "^5.0",
 		"ramsey/uuid": "^4.0"
