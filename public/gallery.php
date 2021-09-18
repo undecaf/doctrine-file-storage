@@ -37,7 +37,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             ->setParameter('tn_size', TN_SIZE)
             ->orderBy('img.name', 'ASC')
             ->getQuery();
-        $images = $query->getArrayResult();
+        $images = $query->getResult();
 
         // Prepare the model for Fluid
         $model = [

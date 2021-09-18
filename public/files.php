@@ -32,7 +32,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             ->from(File::class, 'file')
             ->orderBy('file.name', 'ASC')
             ->getQuery();
-        $files = $query->getArrayResult();
+        $files = $query->getResult();
 
         // Prepare the model for Fluid
         $model = [
