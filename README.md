@@ -1,3 +1,5 @@
+## :warning: This repository is no longer being maintained and has been archived.
+
 # Storing files as BLOBs with Doctrine ORM
 
 PHP applications usually store uploaded files in the server's file system and persist
